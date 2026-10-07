@@ -152,14 +152,14 @@ fn dice_image_data_url(value: Option<u8>, rolling: bool) -> String {
     let number_size = if number.len() == 1 { 64 } else { 56 };
 
     let svg = format!(
-        r#"<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+        r##"<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
 <rect width="144" height="144" rx="20" fill="{background}"/>
 <polygon points="72,13 118,40 128,87 98,126 46,126 16,87 26,40" fill="{accent}" fill-opacity=".88" stroke="#FFFFFF" stroke-opacity=".88" stroke-width="3"/>
 <path d="M72 13 72 126M26 40 118 40M16 87 128 87M26 40 72 87 118 40M16 87 46 126 72 87 98 126 128 87" fill="none" stroke="#FFFFFF" stroke-opacity=".24" stroke-width="2"/>
 <rect x="39" y="47" width="66" height="58" rx="13" fill="#0E0B16" fill-opacity=".76"/>
 <text x="72" y="89" text-anchor="middle" font-family="Arial,sans-serif" font-size="{number_size}" font-weight="800" fill="#FFFFFF">{number}</text>
 <text x="72" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.2" fill="#FFFFFF">{label}</text>
-</svg>"#
+</svg>"##
     );
 
     format!(
