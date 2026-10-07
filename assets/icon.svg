@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+  <rect width="144" height="144" rx="20" fill="#24163A"/>
+  <polygon points="72,12 120,40 130,88 99,128 45,128 14,88 24,40" fill="#7656C9" stroke="#FFFFFF" stroke-width="3"/>
+  <path d="M72 12V128M24 40H120M14 88H130M24 40 72 88 120 40M14 88 45 128 72 88 99 128 130 88" fill="none" stroke="#FFFFFF" stroke-opacity=".28" stroke-width="2"/>
+  <text x="72" y="85" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" font-weight="800" fill="#FFFFFF">W20</text>
+</svg>
