@@ -1,0 +1,39 @@
+{
+  "Name": "W20 Würfel",
+  "Description": "Animierter 20-seitiger Würfel für OpenDeck. Drücken, 3 Sekunden würfeln lassen, Ergebnis ablesen.",
+  "Author": "spliter90",
+  "Version": "0.1.0",
+  "Category": "Spiele",
+  "Icon": "icon",
+  "OS": [
+    { "Platform": "windows", "MinimumVersion": "10" },
+    { "Platform": "mac", "MinimumVersion": "10.15" },
+    { "Platform": "linux" }
+  ],
+  "CodePaths": {
+    "x86_64-pc-windows-msvc": "opendeck-w20-x86_64-pc-windows-msvc.exe",
+    "x86_64-apple-darwin": "opendeck-w20-x86_64-apple-darwin",
+    "aarch64-apple-darwin": "opendeck-w20-aarch64-apple-darwin",
+    "x86_64-unknown-linux-gnu": "opendeck-w20-x86_64-unknown-linux-gnu",
+    "aarch64-unknown-linux-gnu": "opendeck-w20-aarch64-unknown-linux-gnu"
+  },
+  "CodePathWin": "opendeck-w20-x86_64-pc-windows-msvc.exe",
+  "CodePathMac": "opendeck-w20-x86_64-apple-darwin",
+  "CodePathLin": "opendeck-w20-x86_64-unknown-linux-gnu",
+  "Actions": [
+    {
+      "UUID": "de.spliter90.w20.roll",
+      "Name": "W20 Würfel",
+      "Icon": "action",
+      "Tooltip": "W20 würfeln: 3 Sekunden Animation, danach bleibt das Ergebnis stehen",
+      "Controllers": ["Keypad"],
+      "SupportedInMultiActions": false,
+      "States": [
+        {
+          "Image": "action",
+          "Title": ""
+        }
+      ]
+    }
+  ]
+}

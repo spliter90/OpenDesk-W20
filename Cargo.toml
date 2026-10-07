@@ -1,0 +1,20 @@
+[package]
+name = "opendeck-w20"
+version = "0.1.0"
+edition = "2024"
+description = "Animated D20 dice action for OpenDeck"
+license = "MIT"
+
+[dependencies]
+base64 = "0.22"
+openaction = "2.8"
+rand = "0.8"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1.47", features = ["rt-multi-thread", "macros", "time", "sync"] }
+log = "0.4"
+simplelog = "0.12"
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
